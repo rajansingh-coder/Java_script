@@ -41,3 +41,38 @@ let myobj={
 
  console.log(typeof hero);
  
+
+
+
+
+
+//  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack and Heap memory in  Javascript
+
+// stack(Primitive), Heap (Non-Primitive)
+
+
+let myYouTubename="Rajan"
+let anotherName=myYouTubename
+anotherName="Rajan Singh"
+
+console.log(myYouTubename)
+console.log(anotherName);
+
+
+let userOne={
+    email:"singh@gamil.com",
+    upi:"singh@ybl"
+}
+
+let userTwo= userOne
+
+userTwo.email="rajan@email.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+

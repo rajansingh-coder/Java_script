@@ -1,6 +1,7 @@
-// const instauser = new Object()  // singleton object
+const instauser = new Object()  // singleton object
+
  const instauser ={}            // Non singleton object
-//  console.log(instauser);
+ console.log(instauser);
  
 instauser.id ="123abc"
 instauser.name ="sunny"
@@ -19,8 +20,8 @@ const regularUser = {
 
 }
 
-// console.log(regularUser);
-// console.log(regularUser.Fullname.Userfullname.firstname);
+console.log(regularUser);
+console.log(regularUser.Fullname.Userfullname.firstname);
 
 
 // Merging two or more Object
@@ -28,14 +29,14 @@ const regularUser = {
 const obj1 = {1:"A", 2: "B"}
 const obj2 = {3:"A", 4: "B"}
 
-// const obj3 = {obj1,obj2}    //its gives object inside object
+const obj3 = {obj1,obj2}    //its gives object inside object
 
 // {} is the target object. It creates a new object, so obj1 and obj2 remain unchanged.
-// const obj3 = Object.assign({}, obj1, obj2)  // Object.assign() is used to copy or merge objects.
+const obj3 = Object.assign({}, obj1, obj2)  // Object.assign() is used to copy or merge objects.
 
 // Using Spread operator
 const obj3 = {...obj1, ...obj2}
-// console.log(obj3);
+console.log(obj3);
 
 const user = [
     {

@@ -19,5 +19,21 @@ function addTwoNumber(num1, num2)   // when we make function definition at that 
 
 }
 
-addTwoNumber(5, 8)       // while we call the function value is pass is called arguement
+// addTwoNumber(5, 8)       // while we call the function value is pass is called arguement
 
+// we can declare the function too 
+
+// const result = addTwoNumber(5,8);
+// console.log("result:", result);
+
+
+function addTwoNumber(num1, num2)   // when we make function definition at that time the input we are take is called parameter
+{
+    console.log(num1 + num2);
+
+}
+
+addTwoNumber(5, 8)   
+
+const result = addTwoNumber(5,8);
+console.log("result:", result);

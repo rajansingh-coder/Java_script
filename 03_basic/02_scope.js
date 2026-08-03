@@ -14,3 +14,21 @@ if (true) {
 console.log(a);
 // console.log(b);   
 console.log(c);   // it gives the output from the local scope this is the disadvantage of var
+
+
+// =================================
+//    Nested Scope 
+// =================================
+
+function one (){
+    const username = "Rajan"
+
+    function two(){
+        const website ="yt"
+        console.log(username); 
+    }
+    // console.log(website);
+    two()
+}
+
+one()

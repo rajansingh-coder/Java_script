@@ -50,14 +50,14 @@ if(true){
 
 // +++++++++++++++++++++++++++++++Interesting +++++++++++++++++++++++++++
 
-addone(10)
+addone(10)                   // here we only declare the function
 function addone(num1){
     return num1+1;
 }
 
-addtwo(16)                 //  we Cannot access 'addtwo' before initialization
+addtwo(16)                 //  we Cannot access 'addtwo' before initialization  because here we are hold the value in variable as we declare the function 
 
-const addtwo = function(num){
+const addtwo = function(num){                
     return num + 2
 }
 

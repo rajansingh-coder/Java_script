@@ -56,7 +56,12 @@ const chai = () =>{
 // const addtwo = (num1,num2) => num1+num2
 
 const addtwo = (num1,num2) => (num1+num2)       // if we use parenthesis then we should not be use return keyword
+
+// how to return object
+const addtwo = (num1,num2) => ({username:"Rajan"})
 console.log(addtwo(25,45));
+
+
 
 
 

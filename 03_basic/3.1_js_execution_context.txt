@@ -4,3 +4,73 @@ there are three type of js execution context =>
                                               1. Global execution Context
                                               2. Function Execution Context
                                               3. Eval Execution Context
+
+Code file executed in two phase :-
+                                    1. Memory creation phase:- It allocates the Memory for variable. there are no mathematical work like (+,-,*,/) all it work in execution phase.
+                                    2. Execution Phase 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ CALL STACK +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Definition :- The call stack in JavaScript is a data structure that keeps track of which functions are currently being executed. It follows the LIFO (Last In, First Out) principle—the last function added to the stack is the first one to finish and be removed.
+
+
+EXAMPLE:-
+
+
+function one() {                                          
+                                                
+  two();
+}
+
+function two() {
+  three();
+}
+
+function three() {
+  console.log("Inside three");
+}
+
+one();
+
+My Explaination:- 
+
+Here One is call and go to stack one() call and go to => stack 
+|One|
+inside one() call two(). now two call go to  => stack
+|two|
+|one|
+Now two() is added on top.JavaScript must finish two() before it can finish one().
+two() calls three()
+Now three() is added:
+| three |
+| two   |
+| one   |
+three() runs and prints:- inside there
+Then three() is finished, so it is removed from the stack.
+| two |
+| one |
+two() finishes. There is nothing else inside two(), so two() is removed.
+| one |
+one() finishes. Now one() is also finished and removed.
+|   |
+
+what going on 
+
+one()
+  ↓
+two()
+  ↓
+three()
+  ↓
+three finishes
+  ↓
+two finishes
+  ↓
+one finishes
+
+
+
+
+
+
+

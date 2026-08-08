@@ -1,0 +1,6 @@
+JavaScript execution Context :- js execution context means the file we make in js how it actually run.
+
+there are three type of js execution context =>
+                                              1. Global execution Context
+                                              2. Function Execution Context
+                                              3. Eval Execution Context

@@ -28,3 +28,14 @@ const  emptyObj = {}
 if(Object.keys(emptyObj).length === 0){
     console.log("Object is empty");
 }
+
+// Nullish coalescing operator (??): null undefined
+
+let val1;
+// val1 = 3 ?? 73
+// val1 = null ?? 8
+// val1 = undefined ?? 43
+val1 = null ?? 3 ?? 5
+console.log(val1);
+
+

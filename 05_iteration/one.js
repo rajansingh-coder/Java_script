@@ -26,8 +26,19 @@ for (let i = 0; i < 11; i++) {
 
 for(let i = 1; i<=5; i++){
     for(let j = 1; j<=10;j++){
-        console.log(`outer loop ${i},inner loop ${j}`);
+        // console.log(`outer loop ${i},inner loop ${j}`);
         
     }
 }
 
+for (let i = 1; i <= 10; i++){
+    for(j =1;  j<=10; j++){
+        // console.log(i ,"*", j, "=", i*j)
+
+        // using backtick
+        console.log(`${i} *  ${j} = ${i*j}`);
+               
+    }
+}
+    
+   

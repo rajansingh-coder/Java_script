@@ -36,9 +36,38 @@ for (let i = 1; i <= 10; i++){
         // console.log(i ,"*", j, "=", i*j)
 
         // using backtick
-        console.log(`${i} *  ${j} = ${i*j}`);
+
+        // console.log(`${i} *  ${j} = ${i*j}`);
                
     }
 }
-    
+
+let myArray = ["RoshanMan", "LightMan", "sachin","ashutosh"]
+for (let index = 0; index < myArray.length; index++) {
+    const element = myArray[index];
+    // console.log(element);  
+}
+
+// break and continue
+
+// Break
+for (let i = 0; i <= 10; i++) {
+        if(i === 7){
+            console.log("Thala for a Reason");
+            break;
+        }
+    console.log(i);
+        
+}
+
+
+// continue
+for (let i = 0; i <= 10; i++) {
+        if(i === 7){
+            console.log("Thala for a Reason");
+            continue;
+        }   
+    console.log(i);
+         
+}
    

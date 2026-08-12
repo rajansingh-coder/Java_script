@@ -38,4 +38,10 @@ let val1;
 val1 = null ?? 3 ?? 5
 console.log(val1);
 
+// Ternary Operator
+
+const bookPrice = 520
+
+bookPrice >= 500 ? console.log("more than 500") : console.log("less than 500");
+
 

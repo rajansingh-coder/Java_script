@@ -10,3 +10,9 @@ IN  01_basic file i have learn and code these things :-
 5. Strings
 6. Numbers
 7. Date & Time
+
+In 02_basic i learn and code these things 
+
+1.  Array (array , spread operator)
+2.  object  (singleton  &  non- Singleton)
+3. destructure

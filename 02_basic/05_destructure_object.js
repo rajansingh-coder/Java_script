@@ -18,8 +18,8 @@ console.log(instructor);
 
 // In JSON  keys and value both are also in String 
 // JASON is look LIke OBject , But JASON dont have object name
-{
-    "courename": "js",
-    "price":499,
-    "courseinstructor": "Hitesh Sir"
-}
+// {
+//     "courename": "js",
+//     "price":499,
+//     "courseinstructor": "Hitesh Sir"
+// }

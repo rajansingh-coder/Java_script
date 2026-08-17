@@ -1,24 +1,24 @@
 const language = ["js", "py",  "ruby", "c++", "cotlin"]
 
 // Here if we want to return only  js, py, c++ we cannot return using forEach loop
-// const values =  language.forEach((item) =>  {
-//     console.log(item);
-//     return item
+const values =  language.forEach((item) =>  {
+    console.log(item);
+    return item
     
-// } )
+} )
 
-// console.log(values);
+console.log(values);
 
 // Thats why we use filter 
 
-// const myNums =[1,2,3,4,5,6,7,8]
+const myNums =[1,2,3,4,5,6,7,8]
 
-// let  newNums = myNums.filter( (num)=> num < 6)
-// // ================= OR  =====================
-// let  newNums = myNums.filter( (num)=> {
-//     return num < 5
-// })
-// console.log(newNums);
+let  newNums = myNums.filter( (num)=> num < 6)
+// ================= OR  =====================
+let  newNums = myNums.filter( (num)=> {
+    return num < 5
+})
+console.log(newNums);
 
 // doing the same thing using 
 

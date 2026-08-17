@@ -30,4 +30,38 @@ myNums.forEach( (num) =>{
         
     }
 } )
-console.log(newNums);
+// console.log(newNums);
+
+
+
+const movies = [
+    {
+        name: "Inception",
+        genre: "Sci-Fi",
+        year: 2010
+    },
+    {
+        name: "Interstellar",
+        genre: "Sci-Fi",
+        year: 2014
+    },
+    {
+        name: "The Dark Knight",
+        genre: "Action",
+        year: 2008
+    },
+    {
+        name: "Titanic",
+        genre: "Romance",
+        year: 1997
+    },
+    {
+        name: "3 Idiots",
+        genre: "Comedy/Drama",
+        year: 2009
+    }
+];
+
+let userMovie = movies.filter( (movies) => movies.genre === "Sci-Fi")
+ userMovie  = movies.filter( (movies) => {return movies.year >= 2000})
+console.log(userMovie);

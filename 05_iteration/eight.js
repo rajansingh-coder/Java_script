@@ -1,18 +1,17 @@
+// Reduce Function
+
 const myNum = [1,2,3,4,5]
 
-// const myTotal = myNum.reduce( function(acc, currval) {
-//     console.log(`acc: ${acc} and currval ${currval}`);
-//     return acc + currval  
-// }, 0 )
+const myTotal = myNum.reduce( function(acc, currval) {
+    console.log(`acc: ${acc} and currval ${currval}`);
+    return acc + currval  
+}, 0 )
 
-// const myTotal = myNum.reduce((acc, currval) => {
-//     console.log(`acc: ${acc} and currval: ${currval}`)
-//     return acc + currval
-// }, 0)
-
-// console.log(myTotal)
-
-// console.log(myTotal);
+const myTotal = myNum.reduce((acc, currval) => {
+    console.log(`acc: ${acc} and currval: ${currval}`)
+    return acc + currval
+}, 0)
+console.log(myTotal); 
 
 // Example of shopping cart
 
@@ -47,3 +46,4 @@ const shoppingCart = [
 
 const myTotal = shoppingCart.reduce( (acc, item) => acc + item.price , 0 )
 console.log(myTotal);
+

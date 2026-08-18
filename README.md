@@ -16,3 +16,12 @@ In 02_basic i learn and code these things
 1.  Array (array , spread operator)
 2.  object  (singleton  &  non- Singleton)
 3. destructure
+
+
+
+In 03_basic I learn and code these things 
+
+1. Function 
+2. Arrow function
+3. Scope 
+4. IIFE

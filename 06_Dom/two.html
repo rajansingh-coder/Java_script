@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Hitesh Sir</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent)
+    console.log(parent.children);    // get all element in html collection form
+    console.log(parent.children[1].innerHTML); // Acess the first element of array form
+
+    // using for loop 
+
+    for (let i = 0; i < parent.children.length; i++) {
+        console.log(parent.children[i]);  
+    }
+    
+    // Adding style 
+
+    
+    parent.children[1].style.backgroundColor ="beige"
+    parent.children[1].style.padding="15px"
+    parent.children[1].style.color ="orange"
+
+    // we direct access the first and last child
+
+    console.log(parent.firstElementChild);
+    
+    console.log(parent.lastElementChild.innerHTML);
+
+    // we can also go from child to parent also 
+
+    const dayOne =  document.querySelector('.day')
+    console.log(dayOne);                            // output:- monday
+    console.log(dayOne.parentElement);              
+    console.log(dayOne.nextElementSibling);         // output:- tuesday
+    
+    console.log("NODES", parent.childNodes);        // There are total nine node because its count the line break  also but if All subsequent line breaks are ignored by browser
+    
+    
+    
+</script>
+</html>

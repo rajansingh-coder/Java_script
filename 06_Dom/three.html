@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom By Chai Aur Code</title>
 </head>
-<body>
+<body style="background-color: #212121; color: #fff;">
     
 </body>
 <script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main"
+    div.id = Math.round(Math.random()*10+1)
+    div.setAttribute( 'title', "generated title" )
+    div.style.backgroundColor= "red"
+    div.style.padding = "12"
+
+    // adding content in div using overwrite method 
+
+    div.innerText = "DOM by Hitesh Sir !"
+
+    // adding content in div using createTextNode
+
+    const addtext = document.createTextNode('DOM by Hitesh Sir' )
+    div.appendChild(addtext)
+
+    // showing all the thing in browser body
+
+    document.body.appendChild(div)
     
 </script>
 </html>

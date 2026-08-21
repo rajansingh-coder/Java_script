@@ -25,3 +25,8 @@ In 03_basic I learn and code these things
 2. Arrow function
 3. Scope 
 4. IIFE
+
+In 03_basic I learn and code these topic
+1.  if statement
+2.  switch and  break
+3.  Truthy and Falsy

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change</title>
+    <style>
+        body{
+
+            margin: 10px;
+            padding: 10px;
+        }
+        nav{
+              border: 2px solid black;
+              height: 40px;
+              width: auto;
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+        }
+        
+        .home{
+            border: 2px solid gray;
+            height: 25px;
+            width: auto;
+            background-color: #cca446;
+            color: black;
+            font-weight: bold;
+
+            
+        }
+
+        h1{
+            margin: 50px;
+        }
+        div{
+            margin: 10px;
+            display: flex;
+        }
+        .button{
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            border: 2px solid black;
+            color: black;
+            padding: 25px;
+            font-weight: bold;
+            /* margin: 10px; */
+        }
+        #Orange {
+    background-color: orange;
+}
+
+#Yellow {
+    background-color: yellow;
+}
+
+#Red {
+    background-color: red;
+}
+
+#White {
+    background-color: white;
+}
+
+#Blue {
+    background-color: blue;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a class ="home" aria-current="page">Home</a>
+        <a  class="home" href="https://www.youtube.com/watch?v=EGqHVjU-fas&t=194s">Reference Video</a>
+    </nav>
+
+    <div class="main">
+        <h1>Color Scheme Selector</h1>
+        <span class="button" id="Orange">Orange</span>
+        <span class="button" id="Yellow">Yellow</span>
+        <span class="button" id="Red">Red</span>
+        <span class="button" id="White">White</span>
+        <span class="button" id="Blue">Blue</span>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <a class="home" aria-current="page">Home</a>
+        <a class="home" href="https://www.youtube.com/watch?v=EGqHVjU-fas&t=194s">Reference Video</a>
+    </nav>
+    <div class="main">
+        <h1>Guess The Number</h1>
+        <p>Try and guess a random number between 1 to 100</p>
+        <p>You have total 10 Attempt to guess the number </p>
+        <br>
+            <form class="form">
+
+                <label for="guessField"  id="guess">Guess a Number</label>
+                <input type="text" id="guessField"  class="guessField">
+                <input type="Submit" id="submit" value="Submit guess" class="guessSubmit">
+            </form>
+
+            <div class="resultparse">
+                <p>Previous Guesses <span class="guesses"></span></p>
+                <p>Guess Remaining <span class="lastResult">10</span></p>
+            </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

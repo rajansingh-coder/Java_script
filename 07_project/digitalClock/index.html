@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock-  Your Local Time</title>
+    <style>
+             nav {
+    background: rgba(244, 132, 3, 0.2);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    font-weight: bold;
+}
+
+#clock{
+   background-color: orange;
+   border: 2px solid black;
+   font-weight: bold;
+   border-radius: 5px;
+   width: 100px;
+   height: 30px;
+
+}
+    </style>
+</head>
+<body>
+        <nav>
+        <a class ="home" aria-current="page">Home</a>
+        <a  class="home" href="https://www.youtube.com/watch?v=EGqHVjU-fas&t=194s">Reference Video</a>
+    </nav>
+    <div class="main">
+        <div id="banner"><span>Your Local Time</span></div>
+        <div  id="clock"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

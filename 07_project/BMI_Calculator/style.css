@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: grey;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background: rgba(244, 132, 3, 0.2);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    
+}
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+form {
+    background: #fff;
+    padding: 35px 40px;
+    border-radius: 14px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 380px;
+}
+
+form p {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+input {
+    padding: 10px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #764ba2;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #db7637;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: #645b6e;
+}
+
+#result {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 20px;
+    min-height: 30px;
+}
+
+#result span {
+    padding: 6px 14px;
+    border-radius: 8px;
+    background: #f0eaf7;
+    color: #764ba2;
+}
+
+#Weight-guide {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+#Weight-guide h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#Weight-guide p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 4px;
+}

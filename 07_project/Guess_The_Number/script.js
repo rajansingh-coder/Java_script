@@ -10,3 +10,5 @@ const p = document.createElement('p')
 
 let preGuess = []
 
+
+

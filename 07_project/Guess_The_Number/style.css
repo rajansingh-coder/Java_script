@@ -1,0 +1,41 @@
+
+ nav {
+            border: 2px solid black;
+            height: 40px;
+            width: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .home {
+            border: 2px solid gray;
+            height: 25px;
+            width: auto;
+            background-color: #cca446;
+            color: black;
+            font-weight: bold;
+
+
+        }
+ .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ h1{
+    background-color: orange;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: auto;
+    height: 50px;
+ }
+
+ p{
+    font-size: 23px;
+ }
+ .form{
+    font-size: 23px;
+ }

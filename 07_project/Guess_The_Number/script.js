@@ -12,15 +12,16 @@ let preGuess = []
 let NumGuess = 1;
 
 let playGame = true
-
+if(playGame){
 submit.addEventListener('click', function (e) {
     e.preventDefault()
 
-    if (playGame) {
-        const guess = parseInt(userInput.value)
-        validateGuess(guess)
-    }
+    const guess = parseInt(userInput.value);
+    console.log(guess)
+    validateGuess(guess)
 })
+}
+
 
 function validateGuess(guess) {
     if (isNaN(guess)) {
@@ -31,7 +32,7 @@ function validateGuess(guess) {
         alert('please enter the number less than  100')
     } else {
         preGuess.push(guess)
-        if (NumGuess === 10) {
+        if (NumGuess === 11) {
             displayGuess(guess)
             displayMessage(`game over.Random Number was ${randomNumber}`)
             endGame()

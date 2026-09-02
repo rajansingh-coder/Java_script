@@ -10,6 +10,7 @@
     <ul id="images">
         <li> <img width="250px"  id="BabaJI" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPaOczM6L54rIy34mYYUfeH61NNOME1pTHyphaf4WSEEuA-R8asNemohx&s=10" alt=""> </li>
         <li> <img width="250px" id="lalju" src="https://www.trulyearthy.com/cdn/shop/files/krishna_painting_752b1875-8c6f-44e0-a5f2-c25feff63619.jpg?v=1729155976" alt=""> </li>
+        <li> <a  id="google" href="https://www.google.com">Google</a> </li>
     </ul>
 </body>
 <script>
@@ -38,6 +39,25 @@
         console.log ('Pujya Shree Gurudev Maharaj ki Jai')
         e.stopPropagation()        // stop the bubling
     },false)
+
+    document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault()
+        e.stopPropagation()
+        console.log('google clicked')
+
+    },false)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+    
+        
+    })
+
+    //    if(e.target.tagName=== 'IMG'){
+    //         console.log(e);
+    //         let RemoveIMG = e.target.parentNode
+    //         RemoveIMG.remove()
+    //     }
 
 </script>
 </html>

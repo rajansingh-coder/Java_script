@@ -1,0 +1,9 @@
+Ques1. What is asynchronous JavaScript?
+Ans:- Asynchronous JavaScript allows a program to start a task and continue executing other code without waiting for that task to finish.
+Ques2:-JavaScript is synchronous or asynchrous ?
+Ans:- It is Synchronous and single threaded But Synchronous and Single Threaded  is default javaScript Behaviour 
+
+Ques3. What is synchronous JavaScript?
+Answer: Synchronous JavaScript executes code one statement at a time, in order. Each operation must finish before the next operation starts.
+
+

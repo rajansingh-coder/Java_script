@@ -10,9 +10,23 @@
     <button id="stop">Stop</button>
 </body>
 <script>
-    setTimeout(function(){
+    const Greeting = function(){
         console.log('Rajan');
         
-    },2000);
+    }
+
+    // setTimeout() — Run once after a delay
+    // setInterval() — Runs again and again at a fixed interval
+    const HeadingChange = function(){
+    document.querySelector('h1').innerHTML
+    = "Learning by hitesh sir"
+    }
+    const stopbutton = setTimeout(HeadingChange,3000);
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(stopbutton)
+        console.log("stop");  
+    })
+
 </script>
 </html>

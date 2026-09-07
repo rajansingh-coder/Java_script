@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1 style="color: rgb(255, 213, 0);">Shree Harivansh</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
+    <pre id="output"></pre>
 </body>
 <script>
     // it only see on console
+
     const name = document.querySelector('h1').innerHTML
     const ChangeCount = document.querySelector('#start')
     const Stopcount = document.querySelector('#stop')
@@ -20,14 +24,45 @@
     document.querySelector('#start').addEventListener('click', function(){
          intervalID = setInterval(function(){
             console.log(name);
-            
+
         },2000)
     })
        document.querySelector('#stop').addEventListener('click', function(){
         clearInterval(intervalID)
         console.log('stopped');
-        
+
         })
 
-    </script>
+    // Show on browser interface
+
+    const Name = document.querySelector('h1').innerHTML
+    const Changecount = document.querySelector('#start')
+    const StopCount = document.querySelector('#stop')
+    console.log(Name);
+    let intervaliD;
+
+            // document.querySelector('#output').textContent = Name // texContent replaces the old content every time the interval runs.
+            // First time  → Shree Harivansh
+            // Second time → Shree Harivansh  (replaces the first)
+            // Third time  → Shree Harivansh  (replaces the second)
+
+    document.querySelector('#start').addEventListener('click', function () {
+        intervalID = setInterval(function () {
+            //   document.querySelector('#output').textContent = Name // texContent replaces the old content every time the interval runs.
+                        // if wwe want to print again and then
+              document.querySelector('#output').textContent += Name + "\n"
+    }, 2000);
+            // if wwe want to print again and then
+
+        
+})
+
+    document.querySelector('#stop').addEventListener('click', function () {
+        clearInterval(intervalID)
+        console.log('stopped');
+
+    })
+
+</script>
+
 </html>

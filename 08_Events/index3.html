@@ -6,11 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Shree Harivansh</h1>
+    <h1 style="color: rgb(255, 213, 0);">Shree Harivansh</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
 </body>
 <script>
-    
-</script>
+    // it only see on console
+    const name = document.querySelector('h1').innerHTML
+    const ChangeCount = document.querySelector('#start')
+    const Stopcount = document.querySelector('#stop')
+    console.log(name);
+    let intervalID;
+    document.querySelector('#start').addEventListener('click', function(){
+         intervalID = setInterval(function(){
+            console.log(name);
+            
+        },2000)
+    })
+       document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(intervalID)
+        console.log('stopped');
+        
+        })
+
+    </script>
 </html>

@@ -52,3 +52,8 @@ Project are :-
 2. Color Change
 3. Digital Clock
 4. Guess The Number (Use some Basic Event )
+
+In 08_Events I learn and code these topic
+
+1. addEventListener
+2. SetInterval , ClearTimeOut, setTimeOut

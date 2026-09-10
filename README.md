@@ -57,3 +57,6 @@ In 08_Events I learn and code these topic
 
 1. addEventListener
 2. SetInterval , ClearTimeOut, setTimeOut
+
+In 09_async I learn and code these topic
+learning async related theory and practical

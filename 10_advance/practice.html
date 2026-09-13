@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Card</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 52px;
+            font-weight: bold;
+        }
+
+        #card {
+            width: 300px;
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 15px;
+            display: none;
+            background-color: #e9c978;
+        }
+
+        #card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        #followers {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        button{
+            cursor: pointer;
+            height: 50px;
+            width: 120px;
+            background-color: #f7be77;
+            font-weight: bold;
+            font-size: 15px;
+            margin-left: 350px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <p>Click the button to Generate the card</p>
+
+        <div id="card">
+            <img id="avatar" src="" alt="GitHub Avatar">
+
+            <h2 id="username"></h2>
+
+            <div id="followers"></div>
+        </div>
+
+        <button id="click">Generate Card</button>
+    </div>
+
+
+    <script>
+
+        const RequestURL = "https://api.github.com/users/hiteshchoudhary";
+
+        const xhr = new XMLHttpRequest()
+        document.getElementById("click").addEventListener("click", function () {
+            xhr.open('GET', RequestURL)
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    const data = JSON.parse(xhr.responseText)
+
+                    // get avatar
+                    document.getElementById('avatar').src = data.avatar_url;
+
+                    // get Followers
+
+                    document.getElementById('followers').textContent = "followers:" + data.followers;
+
+                    //  get username
+
+                    document.getElementById('username').textContent = data.login;
+
+
+                    //  get card
+
+                    document.getElementById('card').style.display = "block";
+                }
+            }
+            xhr.send();
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>

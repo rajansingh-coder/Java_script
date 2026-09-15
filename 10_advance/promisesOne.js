@@ -23,3 +23,13 @@ new Promise(function(resolve,reject){
     console.log("Promises 2 is consume");
     
 })
+
+const promiseThree = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        resolve({username: "rajan", email:"example@123.com"})
+    });
+})
+promiseThree.then(function(user){
+    console.log(user);
+    
+})

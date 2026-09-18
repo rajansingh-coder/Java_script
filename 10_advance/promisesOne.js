@@ -74,3 +74,34 @@ async function consumePromiseFive() {
         console.log(err);
     }
 }
+consumePromiseFive()
+
+
+// This is the JSON link
+// https://api.github.com/users/hiteshchoudhary
+
+async function getAllUser() {
+    try {
+        const response  = await fetch('https://api.github.com/users/hiteshchoudhary')
+        const data = await response.json()
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
+getAllUser()
+
+
+// we can  do all the above thing usinng fetch  only
+
+fetch('https://api.github.com/users/hiteshchoudhary')
+.then((response)=>{
+    return response.json()
+})
+.then((data)=>{
+    console.log(data)
+})
+.catch((error)=>{
+    console.log(error);
+})

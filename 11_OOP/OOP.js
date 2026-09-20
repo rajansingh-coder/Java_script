@@ -29,7 +29,7 @@ function User(username,password,isLoggedIn){
 // const userOne =User("Rajan", 12345, false)
 // const usertwo =User("Raj", 123, true)
 
-// if we don't use the new key value is overwritten while we console the usertwo 
+// if we don't use the "new key" value is overwritten while we console the usertwo 
 // so it not happen  we use "new" keyword and it  is a  constructor which give new instances every time  
 
 const userOne =new  User("Rajan", 12345, false)

@@ -16,11 +16,11 @@ createUser.prototype.increment = function(){
     this.score++
 }
 createUser.prototype.printMe = function(){
-    console.log(`score is ${this.score}`);
+    console.log(`price  is ${this.score}`);
     
 }
 
-const milk = createUser("milk", 60)
+const milk = new createUser("milk", 60)
 const cheese = createUser("cheese", 320)
 
 milk.printMe()

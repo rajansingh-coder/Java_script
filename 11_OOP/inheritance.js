@@ -19,3 +19,13 @@ class Teacher extends User {
         
     }
 }
+
+const chai = new Teacher("chai", "chai@teacher","123654")
+chai.logMe()
+
+const coldCoffee = new User("Cold-Coffee")
+coldCoffee.logMe();
+
+console.log(chai === coldCoffee);
+
+

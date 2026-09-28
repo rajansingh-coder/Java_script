@@ -67,4 +67,7 @@ In 10 adavance I learn and code these topic
 learning api request related theory and practical
 
 In 11 oop i lelarn and code these things
-object,prototype,call this
+1. object,prototype,call this
+2. classes
+3. inheritance
+4. oop concept 

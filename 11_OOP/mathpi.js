@@ -17,3 +17,32 @@ console.log(Math.PI);
 Math.PI = 6
 console.log(Math.PI);
 
+
+const RasMalai = {
+    price: 30,
+    Type: "sweet",
+    isAvailable:  true,
+    buyRasMalai: function(){
+        console.log('thoda mahanga hai!');
+        
+    }
+}
+
+console.log(RasMalai);
+
+console.log(Object.getOwnPropertyDescriptor(RasMalai,"price"));
+
+Object.defineProperty(RasMalai,'price', {
+    // writable: false,
+    enumerable:false
+})
+
+console.log(Object.getOwnPropertyDescriptor(RasMalai,"price"));
+
+for (let [key,value] of Object.entries(RasMalai)) {
+    if(typeof value !=='function'){
+        console.log(`${key}:${value}`);
+        
+    }
+}
+

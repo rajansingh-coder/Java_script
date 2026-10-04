@@ -4,14 +4,24 @@ class User{
         this.password=  password;
     }
 
+    get email(){
+        return  this._email.toUpperCase()
+    }
+
+    set email(value){
+        this._email = value
+    }
+
+
+
     get  password(){
-        return this.password.toUpperCase()
+        return this._password.toUpperCase()
     }
 
     set password(value){
-        this.password =  value
+        this._password =  value
     }
 }
 
-const  Madhav = new User("madhav@gamil.com", "123654")
-console.log(Madhav.password);
+const  Madhav = new User("madhav@gmail.com", "123654")
+console.log(Madhav.email);

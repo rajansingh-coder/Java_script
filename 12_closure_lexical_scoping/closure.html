@@ -6,7 +6,9 @@
     <title>Document</title>
 </head>
 <body style="background-color: #313131;">
-    
+    <button  id="orange">Orange</button>
+    <button id="yellow">Yellow</button>
+
 </body>
 <script>
 function example1(){
@@ -25,6 +27,47 @@ function example1(){
 
 example1()
 console.log("function is too  outer", username);
+
+</script>
+
+<script>
+// lexical closure
+
+function lex(){
+    const name = "Murari"
+    function displayName(){
+        console.log(name);
+        
+    }
+    return displayName;
+}
+
+const myfunc = lex()
+myfunc()
+
+
+// real life implementation of lexical closure 
+
+//  document.getElementById('orange').onclick=function(){
+//     document.body.style.backgroundColor='orange'
+//  }
+//  document.getElementById('yellow').onclick=function(){
+//     document.body.style.backgroundColor='yellow'
+//  }
+
+// if we have 50 button then we cannot use this method |  This is where lexical  closure comes in handy 
+
+
+function clickHandler(color){
+    // document.body.style.backgroundColor = `${color}`
+
+    return function(){
+        document.body.style.backgroundColor  =`${color}`
+    }
+}
+
+document.getElementById('orange').onclick = clickHandler("orange")
+document.getElementById('yellow').onclick = clickHandler("yellow")
 
 </script>
 </html>

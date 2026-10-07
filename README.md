@@ -66,8 +66,21 @@ learning async related theory and practical
 In 10 adavance I learn and code these topic
 learning api request related theory and practical
 
-In 11 oop i lelarn and code these things
+In 11 oop i learn and code these things
 1. object,prototype,call this
 2. classes
 3. inheritance
 4. oop concept 
+
+In 12 closure and lexical closure  i learn and code these things
+
+1. closure in js 
+2. lexical closure with real life example 
+
+
+==============================================================================
+08/oct/2026
+
+Finally I completed my first ever javaScript series by Hitesh sir AKA chai aur code . very thankful of hitesh sir from bottom my heart.  
+
+I am not only just code the things and finish the playsist instead of  i learnt the concept  and yeah i have also forgotten the some thing but once i revisited the code its not new for me anymore .
